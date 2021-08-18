@@ -25,7 +25,7 @@ if($_POST['action'] == 'create'){
 $action = 'create';
 
 if(isset($_GET['action'])){
-    $animal = edit();
+    $cars = edit();
     $action = 'update';
 }
 

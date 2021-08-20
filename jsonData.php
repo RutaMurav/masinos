@@ -22,12 +22,12 @@ function edit(){
 function store(){
     $data = getData();
     $cars['id'] = newId();
-    $cars['manufaturer'] = $_POST['manufacturer'];
-    $cars['model'] = $_POST['model'];
-    $cars['year'] = $_POST['year'];
-    $cars['colour'] = $_POST['colour'];
-    $cars['distance'] = $_POST['distance'];
-    $cars['fuel'] = $_POST['fuel'];
+    $cars['Manufaturer'] = $_POST['Manufacturer'];
+    $cars['Model'] = $_POST['Model'];
+    $cars['Year'] = $_POST['Year'];
+    $cars['Colour'] = $_POST['Colour'];
+    $cars['Distance'] = $_POST['Distance'];
+    $cars['Fuel'] = $_POST['Fuel'];
     
     $data[] = $cars;
     setData($data);
@@ -66,12 +66,12 @@ function update(){
     $data = getData();
     foreach ($data as &$cars) {
         if($cars['id'] == $_POST['id']){
-    $cars['manufaturer'] = $_POST['manufacturer'];
-    $cars['model'] = $_POST['model'];
-    $cars['year'] = $_POST['year'];
-    $cars['colour'] = $_POST['colour'];
-    $cars['distance'] = $_POST['distance'];
-    $cars['fuel'] = $_POST['fuel'];
+    $cars['Manufaturer'] = $_POST['Manufacturer'];
+    $cars['Model'] = $_POST['Model'];
+    $cars['Year'] = $_POST['Year'];
+    $cars['Colour'] = $_POST['Colour'];
+    $cars['Distance'] = $_POST['Distance'];
+    $cars['Fuel'] = $_POST['Fuel'];
     setData($data);
     return;
         }  

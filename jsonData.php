@@ -53,7 +53,7 @@ function newId(){
 
 function destroy(){
     $data = getData();
-    foreach ($data as $key => $animal) {
+    foreach ($data as $key => $cars) {
         if($cars['id'] == $_POST['id']){
          unset($data[$key]);
          setData($data);

@@ -36,9 +36,9 @@ function store(){
 }
 
 function destroy(){
-    foreach ($_SESSION['athlete'] as $key => $cars) {
+    foreach ($_SESSION['Masinos'] as $key => $cars) {
         if($cars['id'] == $_POST['id']){
-         unset($_SESSION['athlete'][$key]);
+         unset($_SESSION['Masinos'][$key]);
          return;
         }
     }

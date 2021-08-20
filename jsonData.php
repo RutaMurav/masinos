@@ -22,7 +22,7 @@ function edit(){
 function store(){
     $data = getData();
     $cars['id'] = newId();
-    $cars['Manufaturer'] = $_POST['Manufacturer'];
+    $cars['Manufacturer'] = $_POST['Manufacturer'];
     $cars['Model'] = $_POST['Model'];
     $cars['Year'] = $_POST['Year'];
     $cars['Colour'] = $_POST['Colour'];
@@ -66,7 +66,7 @@ function update(){
     $data = getData();
     foreach ($data as &$cars) {
         if($cars['id'] == $_POST['id']){
-    $cars['Manufaturer'] = $_POST['Manufacturer'];
+    $cars['Manufacturer'] = $_POST['Manufacturer'];
     $cars['Model'] = $_POST['Model'];
     $cars['Year'] = $_POST['Year'];
     $cars['Colour'] = $_POST['Colour'];

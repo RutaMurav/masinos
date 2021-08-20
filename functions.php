@@ -23,7 +23,7 @@ function edit(){
 function store(){
     $cars = [];
     $cars['id'] = $_SESSION['id'];
-    $cars['Manufaturer'] = $_POST['Manufacturer'];
+    $cars['Manufacturer'] = $_POST['Manufacturer'];
     $cars['Model'] = $_POST['Model'];
     $cars['Year'] = $_POST['Year'];
     $cars['Colour'] = $_POST['Colour'];

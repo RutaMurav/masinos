@@ -1,6 +1,7 @@
 <?php
-
+session_start();
 include('./jsonData.php');
+// include('./functions.php');
 
 if($_SERVER['REQUEST_METHOD'] == "POST"){
 
@@ -56,28 +57,28 @@ if(isset($_GET['action'])){
          <div class="form-group row">
             <label class="col-sm-2 col-form-label" >Model</label>
             <div class="col-sm-4">
-                <input class="form-control" type="text" name="name" value="<?= (isset($cars))? $cars['Model'] : "" ?>">
+                <input class="form-control" type="text" name="Model" value="<?= (isset($cars))? $cars['Model'] : "" ?>">
             </div>
          </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" >Year</label>
             <div class="col-sm-4">
-                <input class="form-control" type="text" name="age" value="<?= (isset($cars))? $cars['Age'] : "" ?>">
+                <input class="form-control" type="text" name="Year" value="<?= (isset($cars))? $cars['Year'] : "" ?>">
             </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" >Colour</label>
             <div class="col-sm-4">
-                <input class="form-control" type="text" name="colour" value="<?= (isset($cars))? $cars['Colour'] : "" ?>">
+                <input class="form-control" type="text" name="Colour" value="<?= (isset($cars))? $cars['Colour'] : "" ?>">
             </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" >Distance</label>
             <div class="col-sm-4">
-                <input class="form-control" type="text" name="distance" value="<?= (isset($cars))? $cars['Distance'] : "" ?>">
+                <input class="form-control" type="text" name="Distance" value="<?= (isset($cars))? $cars['Distance'] : "" ?>">
             </div>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label" >Fuel</label>
           <div class="col-sm-4">
-                <input class="form-control" type="text" name="fuel" value="<?= (isset($cars))? $cars['Fuel'] : "" ?>">
+                <input class="form-control" type="text" name="Fuel" value="<?= (isset($cars))? $cars['Fuel'] : "" ?>">
             </div>
             
          </div>
